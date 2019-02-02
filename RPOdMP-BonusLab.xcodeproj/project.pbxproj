@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D5D371631F03CB99F3AB48F /* Pods_RPOdMP_BonusLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C976A7C6570F68450EBB933 /* Pods_RPOdMP_BonusLab.framework */; };
 		EC8AC5072206203A006D7962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AC5062206203A006D7962 /* AppDelegate.swift */; };
 		EC8AC5092206203A006D7962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AC5082206203A006D7962 /* ViewController.swift */; };
 		EC8AC50C2206203A006D7962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8AC50A2206203A006D7962 /* Main.storyboard */; };
 		EC8AC50E2206203C006D7962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8AC50D2206203C006D7962 /* Assets.xcassets */; };
 		EC8AC5112206203C006D7962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8AC50F2206203C006D7962 /* LaunchScreen.storyboard */; };
+		EC8AC51A220625E7006D7962 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AC519220625E7006D7962 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24EFB352A2C822B122790448 /* Pods-RPOdMP-BonusLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPOdMP-BonusLab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPOdMP-BonusLab/Pods-RPOdMP-BonusLab.debug.xcconfig"; sourceTree = "<group>"; };
+		6C976A7C6570F68450EBB933 /* Pods_RPOdMP_BonusLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPOdMP_BonusLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8AC5032206203A006D7962 /* RPOdMP-BonusLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPOdMP-BonusLab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8AC5062206203A006D7962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8AC5082206203A006D7962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		EC8AC50D2206203C006D7962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8AC5102206203C006D7962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8AC5122206203C006D7962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8AC519220625E7006D7962 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "RPOdMP-BonusLab/Application/R.generated.swift"; sourceTree = SOURCE_ROOT; };
+		FF1EEB7FF94A4873EB38FAFB /* Pods-RPOdMP-BonusLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPOdMP-BonusLab.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPOdMP-BonusLab/Pods-RPOdMP-BonusLab.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5D371631F03CB99F3AB48F /* Pods_RPOdMP_BonusLab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5301E771831DEE275BC3FE10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C976A7C6570F68450EBB933 /* Pods_RPOdMP_BonusLab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D45DDD17EBABF4C34C381ECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24EFB352A2C822B122790448 /* Pods-RPOdMP-BonusLab.debug.xcconfig */,
+				FF1EEB7FF94A4873EB38FAFB /* Pods-RPOdMP-BonusLab.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC8AC4FA2206203A006D7962 = {
 			isa = PBXGroup;
 			children = (
 				EC8AC5052206203A006D7962 /* RPOdMP-BonusLab */,
 				EC8AC5042206203A006D7962 /* Products */,
+				D45DDD17EBABF4C34C381ECE /* Pods */,
+				5301E771831DEE275BC3FE10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,63 @@
 		EC8AC5052206203A006D7962 /* RPOdMP-BonusLab */ = {
 			isa = PBXGroup;
 			children = (
-				EC8AC5062206203A006D7962 /* AppDelegate.swift */,
-				EC8AC5082206203A006D7962 /* ViewController.swift */,
-				EC8AC50A2206203A006D7962 /* Main.storyboard */,
-				EC8AC50D2206203C006D7962 /* Assets.xcassets */,
-				EC8AC50F2206203C006D7962 /* LaunchScreen.storyboard */,
-				EC8AC5122206203C006D7962 /* Info.plist */,
+				EC8AC51B22062648006D7962 /* Application */,
+				EC8AC51E2206281D006D7962 /* Classes */,
+				EC8AC51F22062831006D7962 /* Resources */,
 			);
 			path = "RPOdMP-BonusLab";
+			sourceTree = "<group>";
+		};
+		EC8AC51B22062648006D7962 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AC5122206203C006D7962 /* Info.plist */,
+				EC8AC519220625E7006D7962 /* R.generated.swift */,
+				EC8AC5062206203A006D7962 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EC8AC51E2206281D006D7962 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AC52122062880006D7962 /* View Controllers */,
+				EC8AC52222062889006D7962 /* View Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EC8AC51F22062831006D7962 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AC52022062862006D7962 /* Storyboards */,
+				EC8AC50F2206203C006D7962 /* LaunchScreen.storyboard */,
+				EC8AC50D2206203C006D7962 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC8AC52022062862006D7962 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AC50A2206203A006D7962 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EC8AC52122062880006D7962 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AC5082206203A006D7962 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EC8AC52222062889006D7962 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC8AC5152206203C006D7962 /* Build configuration list for PBXNativeTarget "RPOdMP-BonusLab" */;
 			buildPhases = (
+				9F8989D505ECFA07A8A3209F /* [CP] Check Pods Manifest.lock */,
+				EC8AC518220623E4006D7962 /* R.swift */,
 				EC8AC4FF2206203A006D7962 /* Sources */,
 				EC8AC5002206203A006D7962 /* Frameworks */,
 				EC8AC5012206203A006D7962 /* Resources */,
+				3E5FF0FFFF9E126F32072C84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +208,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E5FF0FFFF9E126F32072C84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RPOdMP-BonusLab/Pods-RPOdMP-BonusLab-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPOdMP-BonusLab/Pods-RPOdMP-BonusLab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F8989D505ECFA07A8A3209F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPOdMP-BonusLab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8AC518220623E4006D7962 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/RPOdMP-BonusLab/Application/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/RPOdMP-BonusLab/Application/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC8AC4FF2206203A006D7962 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +296,7 @@
 			files = (
 				EC8AC5092206203A006D7962 /* ViewController.swift in Sources */,
 				EC8AC5072206203A006D7962 /* AppDelegate.swift in Sources */,
+				EC8AC51A220625E7006D7962 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +440,12 @@
 		};
 		EC8AC5162206203C006D7962 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24EFB352A2C822B122790448 /* Pods-RPOdMP-BonusLab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLALR9F4Q5;
-				INFOPLIST_FILE = "RPOdMP-BonusLab/Info.plist";
+				INFOPLIST_FILE = "RPOdMP-BonusLab/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +459,12 @@
 		};
 		EC8AC5172206203C006D7962 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1EEB7FF94A4873EB38FAFB /* Pods-RPOdMP-BonusLab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLALR9F4Q5;
-				INFOPLIST_FILE = "RPOdMP-BonusLab/Info.plist";
+				INFOPLIST_FILE = "RPOdMP-BonusLab/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

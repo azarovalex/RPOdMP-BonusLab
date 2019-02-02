@@ -1,0 +1,11 @@
+Pods
+UserInterfaceState.xcuserstate
+RPOdMP-BonusLab.xcscheme
+Breakpoints_v2.xcbkptlist
+*.generated.swift
+Podfile.lock
+RPOdMP-BonusLab\.xcworkspace/xcshareddata/
+RPOdMP-BonusLab\.xcodeproj/project\.xcworkspace/xcuserdata/alexazarov\.xcuserdatad/
+RPOdMP-BonusLab\.xcodeproj/xcuserdata/alexazarov\.xcuserdatad/xcschemes/xcschememanagement\.plist
+*.xcworkspacedata
+\.DS_Store
