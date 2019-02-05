@@ -27,6 +27,8 @@
 		EC8AC53E22063DFB006D7962 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AC53C22063DFB006D7962 /* NoteTableViewCell.swift */; };
 		EC8AC53F22063DFB006D7962 /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8AC53D22063DFB006D7962 /* NoteTableViewCell.xib */; };
 		EC8AC54222064621006D7962 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AC54122064621006D7962 /* UIViewController+Rx.swift */; };
+		ECA8308F2209BF98009196CD /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8308E2209BF98009196CD /* EditNoteViewController.swift */; };
+		ECA830912209C032009196CD /* EditNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA830902209C032009196CD /* EditNoteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		EC8AC53C22063DFB006D7962 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		EC8AC53D22063DFB006D7962 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
 		EC8AC54122064621006D7962 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		ECA8308E2209BF98009196CD /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		ECA830902209C032009196CD /* EditNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewModel.swift; sourceTree = "<group>"; };
 		FF1EEB7FF94A4873EB38FAFB /* Pods-RPOdMP-BonusLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPOdMP-BonusLab.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPOdMP-BonusLab/Pods-RPOdMP-BonusLab.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +162,7 @@
 			children = (
 				EC8AC5082206203A006D7962 /* ListOfNotesViewController.swift */,
 				EC05787A220777CE00458EF6 /* NewNoteViewController.swift */,
+				ECA8308E2209BF98009196CD /* EditNoteViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			children = (
 				EC8AC5392206392E006D7962 /* ListOfNotesViewModel.swift */,
 				EC05787C2207783000458EF6 /* NewNoteViewModel.swift */,
+				ECA830902209C032009196CD /* EditNoteViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -406,11 +412,13 @@
 			files = (
 				EC8AC530220637AD006D7962 /* NotesService.swift in Sources */,
 				EC8AC52E220636A9006D7962 /* Credentials.swift in Sources */,
+				ECA8308F2209BF98009196CD /* EditNoteViewController.swift in Sources */,
 				EC8AC53822063864006D7962 /* AppError.swift in Sources */,
 				EC8AC53522063823006D7962 /* NetworkExtension.swift in Sources */,
 				EC8AC53322063805006D7962 /* NetworkService.swift in Sources */,
 				EC8AC5092206203A006D7962 /* ListOfNotesViewController.swift in Sources */,
 				EC05787D2207783000458EF6 /* NewNoteViewModel.swift in Sources */,
+				ECA830912209C032009196CD /* EditNoteViewModel.swift in Sources */,
 				EC8AC54222064621006D7962 /* UIViewController+Rx.swift in Sources */,
 				EC8AC5072206203A006D7962 /* AppDelegate.swift in Sources */,
 				EC8AC51A220625E7006D7962 /* R.generated.swift in Sources */,

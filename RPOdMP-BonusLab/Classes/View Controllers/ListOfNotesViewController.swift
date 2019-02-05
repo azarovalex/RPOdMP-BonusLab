@@ -36,7 +36,8 @@ private extension ListOfNotesViewController {
     func bindViewModel() {
         let inputs = ListOfNotesViewModel.Input(noteDeleted: deleteCellRelay.asSignal(),
                                                 newNote: newNoteButton.rx.tap.asSignal(),
-                                                viewWillAppear: rx.viewWillAppear.asSignal())
+                                                viewWillAppear: rx.viewWillAppear.asSignal(),
+                                                noteSelected: tableView.rx.itemSelected.asSignal())
         let outputs = viewModel.transform(input: inputs)
         
         outputs.navigation
@@ -52,6 +53,12 @@ private extension ListOfNotesViewController {
             .drive(tableView.rx.items) { [weak self] _, index, model in
                 guard let self = self else { return UITableViewCell() }
                 return self.getCell(for: index, with: model) }
+            .disposed(by: bag)
+        outputs.updateNote
+            .emit(onNext: { note in
+                let vc = R.storyboard.main.editNoteViewController()!
+                vc.note = note
+                self.navigationController?.pushViewController(vc, animated: true) })
             .disposed(by: bag)
     }
 }

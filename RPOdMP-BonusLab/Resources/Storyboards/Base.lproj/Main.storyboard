@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1097" y="163"/>
         </scene>
         <!--New note-->
         <scene sceneID="kPL-ta-hul">
@@ -90,7 +90,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4d-RY-c9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928.8" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1929" y="-185"/>
+        </scene>
+        <!--Edit Note-->
+        <scene sceneID="r9u-Rd-hA9">
+            <objects>
+                <viewController storyboardIdentifier="editNoteViewController" id="xTK-Fe-5eE" customClass="EditNoteViewController" customModule="RPOdMP_BonusLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kdu-z2-rG2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dg-ho-5cz">
+                                <rect key="frame" x="16" y="84" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="WSY-Qw-huY">
+                                <rect key="frame" x="16" y="122" width="343" height="525"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WSY-Qw-huY" firstAttribute="top" secondItem="6dg-ho-5cz" secondAttribute="bottom" constant="8" id="2yZ-5I-9WZ"/>
+                            <constraint firstItem="WSY-Qw-huY" firstAttribute="leading" secondItem="ydc-29-vxR" secondAttribute="leading" constant="16" id="5bG-UH-foH"/>
+                            <constraint firstItem="ydc-29-vxR" firstAttribute="bottom" secondItem="WSY-Qw-huY" secondAttribute="bottom" constant="20" id="DNc-jh-5ow"/>
+                            <constraint firstItem="ydc-29-vxR" firstAttribute="trailing" secondItem="6dg-ho-5cz" secondAttribute="trailing" constant="16" id="G10-rd-01C"/>
+                            <constraint firstItem="6dg-ho-5cz" firstAttribute="top" secondItem="ydc-29-vxR" secondAttribute="top" constant="20" id="Mtj-6E-IEV"/>
+                            <constraint firstItem="ydc-29-vxR" firstAttribute="trailing" secondItem="WSY-Qw-huY" secondAttribute="trailing" constant="16" id="RrF-vF-BYW"/>
+                            <constraint firstItem="6dg-ho-5cz" firstAttribute="leading" secondItem="ydc-29-vxR" secondAttribute="leading" constant="16" id="kWk-Uz-Mcr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ydc-29-vxR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Note" id="RJ2-uz-y3R">
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="DH3-ez-tUg"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="WSY-Qw-huY" id="8gB-ar-PqL"/>
+                        <outlet property="editButton" destination="DH3-ez-tUg" id="sib-jE-h2N"/>
+                        <outlet property="titleTextField" destination="6dg-ho-5cz" id="2Az-hJ-1vA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnT-K8-Pmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="554"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Tn-0c-Jf8">
@@ -108,7 +155,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SN8-c1-CGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302" y="133"/>
+            <point key="canvasLocation" x="314" y="162"/>
         </scene>
     </scenes>
 </document>

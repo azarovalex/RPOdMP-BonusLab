@@ -17,12 +17,13 @@ class ListOfNotesViewModel {
     private let notesService = NotesService()
     private let bag = DisposeBag()
     
-    private var notesStorage = BehaviorRelay<[Note]>(value: [])
+    private let notesStorage = BehaviorRelay<[Note]>(value: [])
     
     struct Input {
         let noteDeleted: Signal<Int>
         let newNote: Signal<Void>
         let viewWillAppear: Signal<Void>
+        let noteSelected: Signal<IndexPath>
     }
     
     struct Output {
@@ -30,17 +31,20 @@ class ListOfNotesViewModel {
         let cells: Driver<[NoteTableViewCellModel]>
         let isLoading: Driver<Bool>
         let errors: Signal<Error>
+        let updateNote: Signal<Note>
     }
     
     func transform(input: Input) -> Output {
         let navigationSignal = input.newNote
         let cellsDriver = notesStorage.asDriver()
             .map { $0.map { NoteTableViewCellModel(title: $0.title, content: $0.content) } }
+        let updateNoteSingal = input.noteSelected.map { [unowned self] in self.notesStorage.value[$0.row] }
         bindEvents(input: input)
         return Output(navigation: navigationSignal,
                       cells: cellsDriver,
                       isLoading: isLoadingRelay.asDriver(),
-                      errors: errorsRelay.asSignal())
+                      errors: errorsRelay.asSignal(),
+                      updateNote: updateNoteSingal)
     }
 }
 
